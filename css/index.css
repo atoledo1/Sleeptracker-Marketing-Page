@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px auto;
+  width: 100%;
+  border: 20px midnightblue solid;
+  height: auto;
+  background: #373B44;
+  background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);
+  background: linear-gradient(to bottom, #4286f4, #373B44);
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 10%;
+  background-image: url(../images/illustration.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+}
+html,
+body {
+  font-family: 'Acme', sans-serif;
+  color: white;
+}
+h2 {
+  font-size: 3.2rem;
+}
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5%;
+  border: 3px green solid;
+}
+header .moon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 2px yellow solid;
+  margin-right: auto;
+}
+header .moon .leftnav {
+  width: 25%;
+}
+header .moon img {
+  width: 100%;
+  height: auto;
+}
+header nav {
+  display: flex;
+  width: 75%;
+  font-size: 2.5rem;
+  border: 3px red  solid;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  align-content: space-between;
+  border: 3px orange solid;
+}
+footer {
+  padding: 4%;
+  padding-left: 10%;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  align-content: space-between;
+  text-align: center;
+  padding: 8%;
+}
+.second {
+  opacity: 50%;
+  height: 20%;
+  width: 20%;
+  align-self: center;
+}
+.firstcontent {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Acme', sans-serif;
+  justify-content: space-around;
+  align-content: center;
+  font-size: 2rem;
+  padding-left: 5%;
+  padding: 2%;
+  text-align: center;
+}
+.firstcontent h1 {
+  font-size: 5rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.secondcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Acme', sans-serif;
+  align-content: center;
+  font-size: 2rem;
+}
+Button {
+  color: #ffcc67;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 8px;
+  border-radius: 19px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(to right, #1c6ea4 0%, #2388cb 50%, #144e75 100%);
+  box-shadow: #000000 5px 5px 15px 5px;
+  border: 2px solid #1c6ea4;
+  display: inline-block;
+}
+.myButton:hover {
+  background: #1C6EA4;
+}
+.myButton:active {
+  background: #144E75;
+}
