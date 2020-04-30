@@ -141,10 +141,10 @@ html {
 body {
   margin: 0px auto;
   width: 100%;
-  border-top: 40px midnightblue solid;
-  border-bottom: 40px midnightblue solid;
-  border-right: 60px midnightblue solid;
-  border-left: 60px midnightblue solid;
+  border-top: 4rem midnightblue solid;
+  border-bottom: 4rem midnightblue solid;
+  border-right: 6rem midnightblue solid;
+  border-left: 6rem midnightblue solid;
   background: linear-gradient(to bottom, #4286f4, #373b44);
 }
 body::before {
@@ -170,26 +170,35 @@ header {
   justify-content: center;
   width: 100%;
   padding: 5%;
-  border: 3px green solid;
+  border: 0.3rem green solid;
+  height: 20%;
 }
 header .leftnav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   width: 25%;
+  margin-right: auto;
+}
+header .leftnav h1 {
+  font-size: 2.5rem;
 }
 header .moon {
-  height: 2.5rem;
-  width: 2.5rem;
-  border: 2px yellow solid;
+  height: 100%;
+  width: 50%;
+  border: 0.2rem yellow solid;
   margin-right: auto;
 }
 header .moon img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 header nav {
   display: flex;
-  width: 75%;
+  width: 50%;
   font-size: 2.5rem;
-  border: 3px red solid;
+  border: 0.3rem red solid;
+  align-items: center;
   align-content: space-between;
   justify-content: space-evenly;
 }
@@ -198,18 +207,27 @@ header a {
   color: white;
   text-align: center;
   align-content: space-between;
-  border: 3px orange solid;
+  border: 0.3rem orange solid;
 }
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 10%;
   padding: 4%;
-  padding-left: 10%;
   letter-spacing: 0.2rem;
-  border: 2px plum solid;
+  border: 0.2rem plum solid;
   font-size: 2rem;
   color: white;
 }
-footer a {
+footer nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer nav a {
   text-decoration: none;
   color: white;
   align-content: space-between;
@@ -234,32 +252,10 @@ footer a {
   padding-left: 5%;
   padding: 2%;
   text-align: center;
+  height: 30%;
 }
 .firstcontent h1 {
   font-size: 5rem;
   padding-top: 5%;
   padding-bottom: 5%;
-}
-Button {
-  color: #ffcc67;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 8px;
-  border-radius: 19px;
-  font-family: Georgia, serif;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  background-image: linear-gradient(to right, #1c6ea4 0%, #2388cb 50%, #144e75 100%);
-  box-shadow: #000000 5px 5px 15px 5px;
-  border: 2px solid #1c6ea4;
-  display: inline-block;
-}
-.myButton:hover {
-  background: #1c6ea4;
-}
-.myButton:active {
-  background: #144e75;
 }
