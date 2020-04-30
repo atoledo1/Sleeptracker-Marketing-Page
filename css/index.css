@@ -129,17 +129,23 @@ table {
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  font-family: "Acme", sans-serif;
+  color: white;
+  height: 100%;
+}
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 body {
   margin: 0px auto;
   width: 100%;
-  border: 20px midnightblue solid;
-  height: auto;
-  background: #373B44;
-  background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);
-  background: linear-gradient(to bottom, #4286f4, #373B44);
+  border: 30px midnightblue solid;
+  background: #373b44;
+  background: -webkit-linear-gradient(to bottom, #4286f4, #373b44);
+  background: linear-gradient(to bottom, #4286f4, #373b44);
 }
 body::before {
   content: "";
@@ -156,11 +162,6 @@ body::before {
   background-size: 100%;
   background-position: center;
 }
-html,
-body {
-  font-family: 'Acme', sans-serif;
-  color: white;
-}
 h2 {
   font-size: 3.2rem;
 }
@@ -171,24 +172,24 @@ header {
   padding: 5%;
   border: 3px green solid;
 }
+header .leftnav {
+  width: 25%;
+}
 header .moon {
   height: 2.5rem;
   width: 2.5rem;
   border: 2px yellow solid;
   margin-right: auto;
 }
-header .moon .leftnav {
-  width: 25%;
-}
 header .moon img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 header nav {
   display: flex;
   width: 75%;
   font-size: 2.5rem;
-  border: 3px red  solid;
+  border: 3px red solid;
   align-content: space-between;
   justify-content: space-evenly;
 }
@@ -203,6 +204,7 @@ footer {
   padding: 4%;
   padding-left: 10%;
   letter-spacing: 0.2rem;
+  border: 2px plum solid;
   font-size: 2rem;
   color: white;
 }
@@ -222,7 +224,7 @@ footer a {
 .firstcontent {
   display: flex;
   flex-direction: column;
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   justify-content: space-around;
   align-content: center;
   font-size: 2rem;
@@ -239,7 +241,7 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   align-content: center;
   font-size: 2rem;
 }
@@ -261,8 +263,8 @@ Button {
   display: inline-block;
 }
 .myButton:hover {
-  background: #1C6EA4;
+  background: #1c6ea4;
 }
 .myButton:active {
-  background: #144E75;
+  background: #144e75;
 }
