@@ -233,8 +233,8 @@ footer nav a {
   padding: 2% 0%;
 }
 svg {
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 25%;
 }
 path {
   fill: white;
@@ -258,13 +258,11 @@ path:hover {
   display: flex;
   flex-direction: row;
   font-family: "Acme", sans-serif;
-  justify-content: flex-start;
+  justify-content: space-around;
   font-size: 1.6rem;
-  padding-left: 5%;
   padding: 2%;
   text-align: justify;
   line-height: 2.1rem;
-  height: 30%;
   align-items: flex-start;
 }
 .container .firstcontent .text {
@@ -273,8 +271,15 @@ path:hover {
   flex-wrap: wrap;
   align-items: center;
   align-content: space-around;
-  width: 22%;
-  padding-left: 2rem;
+  width: 20%;
+}
+.container .firstcontent .bubble {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: space-between;
+  width: 70%;
 }
 header {
   font-size: 3rem;
