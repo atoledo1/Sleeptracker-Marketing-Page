@@ -187,6 +187,7 @@ header .leftnav .moon {
 header .leftnav .moon img {
   max-width: 60%;
   height: auto;
+  opacity: 89%;
 }
 header .leftnav h1 {
   width: 60%;
