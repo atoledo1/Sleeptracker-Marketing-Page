@@ -2,36 +2,34 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 5%;
-  border: .3rem green solid;
+  padding: 2%;
   height: 20%;
 
   .leftnav {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-around;
     width: 25%;
     margin-right: auto;
-
-    h1 {
-      font-size: 2.5rem;
+    .moon {
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      img {
+        max-width: 60%;
+        height: auto;
+      }
     }
-  }
-  .moon {
-    height: 100%;
-    width: 50%;
-    border: .2rem yellow solid;
-    margin-right: auto;
-    img {
-      width: 100%;
-      height: auto;
+    h1 {
+      width: 60%;
+      font-size: 3.2rem;
     }
   }
   nav {
+    height: 100%;
     display: flex;
-    width: 50%;
+    width: 55%;
     font-size: 2.5rem;
-    border: .3rem red solid;
     align-items: center;
     align-content: space-between;
     justify-content: space-evenly;
@@ -41,6 +39,5 @@ header {
     color: white;
     text-align: center;
     align-content: space-between;
-    border: .3rem orange solid;
   }
 }

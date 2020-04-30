@@ -169,35 +169,34 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 5%;
-  border: 0.3rem green solid;
+  padding: 2%;
   height: 20%;
 }
 header .leftnav {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-around;
   width: 25%;
   margin-right: auto;
 }
-header .leftnav h1 {
-  font-size: 2.5rem;
+header .leftnav .moon {
+  display: flex;
+  justify-content: center;
+  width: 40%;
 }
-header .moon {
-  height: 100%;
-  width: 50%;
-  border: 0.2rem yellow solid;
-  margin-right: auto;
-}
-header .moon img {
-  width: 100%;
+header .leftnav .moon img {
+  max-width: 60%;
   height: auto;
 }
+header .leftnav h1 {
+  width: 60%;
+  font-size: 3.2rem;
+}
 header nav {
+  height: 100%;
   display: flex;
-  width: 50%;
+  width: 55%;
   font-size: 2.5rem;
-  border: 0.3rem red solid;
   align-items: center;
   align-content: space-between;
   justify-content: space-evenly;
@@ -207,7 +206,6 @@ header a {
   color: white;
   text-align: center;
   align-content: space-between;
-  border: 0.3rem orange solid;
 }
 footer {
   display: flex;
@@ -217,7 +215,7 @@ footer {
   height: 10%;
   padding: 2%;
   letter-spacing: 0.2rem;
-  border: 0.2rem plum solid;
+  box-shadow: 0rem -1rem 1rem -0.6rem #517dc5;
   font-size: 2rem;
   color: white;
 }
@@ -232,7 +230,7 @@ footer nav a {
   color: white;
   align-content: space-between;
   text-align: center;
-  padding: 3%;
+  padding: 2% 0%;
 }
 .container {
   height: 100%;
@@ -247,13 +245,46 @@ footer nav a {
   flex-direction: column;
   font-family: "Acme", sans-serif;
   justify-content: flex-start;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 5%;
   padding: 2%;
-  text-align: center;
+  text-align: justify;
+  line-height: 2.1rem;
   height: 30%;
   align-items: flex-start;
 }
 .firstcontent .text {
-  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  width: 22%;
+  padding-left: 2rem;
+}
+header {
+  font-size: 3rem;
+}
+.group1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.group2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  height: 11rem;
+  width: 10rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
