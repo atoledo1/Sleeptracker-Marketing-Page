@@ -18,18 +18,15 @@ path:hover {
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   align-content: space-between;
+  .center();
   @media @tablet {
     align-content: flex-start;
   }
   @media @mobile {
   }
   .firstcontent {
-    display: flex;
     flex-direction: row;
     font-family: "Acme", sans-serif;
     justify-content: space-around;
@@ -37,7 +34,7 @@ path:hover {
     padding: 2%;
     text-align: justify;
     line-height: 2.1rem;
-    align-items: flex-start;
+    .flexbox-align(flex-start);
     @media @tablet {
       align-content: space-between;
       flex-wrap: wrap-reverse;

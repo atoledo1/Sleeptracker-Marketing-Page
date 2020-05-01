@@ -1,3 +1,8 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -283,11 +288,11 @@ path:hover {
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   align-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media ( max-width: 800px ) {
   .container {
@@ -295,7 +300,6 @@ path:hover {
   }
 }
 .container .firstcontent {
-  display: flex;
   flex-direction: row;
   font-family: "Acme", sans-serif;
   justify-content: space-around;
@@ -303,6 +307,7 @@ path:hover {
   padding: 2%;
   text-align: justify;
   line-height: 2.1rem;
+  display: flex;
   align-items: flex-start;
 }
 @media ( max-width: 800px ) {
@@ -347,6 +352,10 @@ path:hover {
     width: 100%;
   }
 }
+.about1 {
+  font-size: 3rem;
+  text-align: center;
+}
 .group1 {
   display: flex;
   align-items: center;
@@ -363,12 +372,17 @@ path:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media ( max-width: 800px ) {
+  .group2 {
+    padding-top: 10vw;
+  }
+}
 .card {
-  height: 11rem;
-  width: 10rem;
+  height: 11vw;
+  width: 10vw;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
 }
 .card img {
   border-radius: 32.5em;
