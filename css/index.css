@@ -147,7 +147,7 @@ body {
   border-left: 6rem midnightblue solid;
   background: linear-gradient(to bottom, #4286f4, #373b44);
 }
-body::before {
+body:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -167,7 +167,6 @@ h2 {
 }
 header {
   display: flex;
-  justify-content: center;
   width: 100%;
   padding: 2%;
   height: 20%;

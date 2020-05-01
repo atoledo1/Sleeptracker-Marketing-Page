@@ -22,22 +22,21 @@ body {
   border-right: 6rem midnightblue solid;
   border-left: 6rem midnightblue solid;
   background: linear-gradient(to bottom, #4286f4, #373b44);
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  opacity: 10%;
-  background-image: url(../images/illustration.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: center;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 10%;
+    background-image: url(../images/illustration.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+  }
 }
 
 h2 {
