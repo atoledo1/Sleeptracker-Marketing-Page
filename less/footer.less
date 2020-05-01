@@ -10,6 +10,11 @@ footer {
   box-shadow: 0rem -1rem 1rem -0.6rem rgb(81, 125, 197);
   font-size: 2rem;
   color: white;
+  @media @tablet {
+    display: none;
+  }
+  @media @mobile {
+  }
   nav {
     width: 100%;
     display: flex;
@@ -22,9 +27,9 @@ footer {
       text-align: center;
       padding: 2% 0%;
     }
-    a:hover{
-        color: palegoldenrod;
-        text-transform: uppercase;
-      }
+    a:hover {
+      color: palegoldenrod;
+      text-transform: uppercase;
+    }
   }
 }

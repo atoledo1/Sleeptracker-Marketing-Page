@@ -195,7 +195,7 @@ header .leftnav .moon img {
 }
 header .leftnav h1 {
   width: 60%;
-  font-size: 3vw;
+  font-size: 3.2vw;
 }
 @media ( max-width: 800px ) {
   header .leftnav h1 {
@@ -205,7 +205,7 @@ header .leftnav h1 {
 header nav {
   height: 100%;
   display: flex;
-  width: 55%;
+  width: 65%;
   align-items: center;
   align-content: space-between;
   justify-content: space-evenly;
@@ -216,11 +216,10 @@ header nav {
   }
 }
 header nav a {
-  font-size: 2.5vw;
+  font-size: 2.75vw;
   text-decoration: none;
   color: white;
   text-align: center;
-  align-content: space-between;
 }
 @media ( max-width: 800px ) {
   header nav a {
@@ -242,6 +241,11 @@ footer {
   box-shadow: 0rem -1rem 1rem -0.6rem #517dc5;
   font-size: 2rem;
   color: white;
+}
+@media ( max-width: 800px ) {
+  footer {
+    display: none;
+  }
 }
 footer nav {
   width: 100%;
@@ -285,16 +289,26 @@ path:hover {
   justify-content: center;
   align-content: space-between;
 }
+@media ( max-width: 800px ) {
+  .container {
+    align-content: flex-start;
+  }
+}
 .container .firstcontent {
   display: flex;
   flex-direction: row;
   font-family: "Acme", sans-serif;
   justify-content: space-around;
-  font-size: 1.6rem;
+  font-size: 1.5vw;
   padding: 2%;
   text-align: justify;
   line-height: 2.1rem;
   align-items: flex-start;
+}
+@media ( max-width: 800px ) {
+  .container .firstcontent {
+    flex-wrap: wrap-reverse;
+  }
 }
 .container .firstcontent .text {
   height: 100%;
@@ -304,13 +318,27 @@ path:hover {
   align-content: space-around;
   width: 20%;
 }
+@media ( max-width: 800px ) {
+  .container .firstcontent .text {
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+}
 .container .firstcontent .bubble {
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   align-content: space-between;
+  justify-content: space-evenly;
   width: 70%;
+}
+@media ( max-width: 800px ) {
+  .container .firstcontent .bubble {
+    width: 100%;
+  }
 }
 .group1 {
   display: flex;

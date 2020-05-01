@@ -23,16 +23,26 @@ path:hover {
   align-items: center;
   justify-content: center;
   align-content: space-between;
+  @media @tablet {
+    align-content: flex-start;
+  }
+  @media @mobile {
+  }
   .firstcontent {
     display: flex;
     flex-direction: row;
     font-family: "Acme", sans-serif;
     justify-content: space-around;
-    font-size: 1.6rem;
+    font-size: 1.5vw;
     padding: 2%;
     text-align: justify;
     line-height: 2.1rem;
     align-items: flex-start;
+    @media @tablet {
+      flex-wrap: wrap-reverse;
+    }
+    @media @mobile {
+    }
     .text {
       height: 100%;
       display: flex;
@@ -40,6 +50,14 @@ path:hover {
       align-items: center;
       align-content: space-around;
       width: 20%;
+      @media @tablet {
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: space-between;
+        justify-content: space-between;
+      }
+      @media @mobile {
+      }
     }
     .bubble {
       height: 100%;
@@ -47,7 +65,13 @@ path:hover {
       flex-wrap: nowrap;
       align-items: center;
       align-content: space-between;
+      justify-content: space-evenly;
       width: 70%;
+      @media @tablet {
+        width: 100%;
+      }
+      @media @mobile {
+      }
     }
   }
 }
