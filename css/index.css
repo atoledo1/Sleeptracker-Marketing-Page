@@ -159,7 +159,7 @@ body:before {
   background-image: url(../images/illustration.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 h2 {
@@ -170,12 +170,6 @@ header {
   width: 100%;
   padding: 2%;
   height: 20%;
-}
-@media ( max-width: 800px ) {
-  header {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 header .leftnav {
   display: flex;
@@ -190,13 +184,23 @@ header .leftnav .moon {
   width: 40%;
 }
 header .leftnav .moon img {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
   opacity: 89%;
 }
+@media ( max-width: 800px ) {
+  header .leftnav .moon img {
+    max-width: 90%;
+  }
+}
 header .leftnav h1 {
   width: 60%;
-  font-size: 3.2rem;
+  font-size: 3vw;
+}
+@media ( max-width: 800px ) {
+  header .leftnav h1 {
+    font-size: 3.5vw;
+  }
 }
 header nav {
   height: 100%;

@@ -4,8 +4,6 @@ header {
   padding: 2%;
   height: 20%;
   @media @tablet {
-    flex-wrap: wrap;
-    justify-content: center;
   }
   @media @mobile {
   }
@@ -19,15 +17,26 @@ header {
       display: flex;
       justify-content: center;
       width: 40%;
+
       img {
-        max-width: 60%;
+        max-width: 70%;
         height: auto;
         opacity: 89%;
+        @media @tablet {
+          max-width: 90%;
+        }
+        @media @mobile {
+        }
       }
     }
     h1 {
       width: 60%;
-      font-size: 3.2rem;
+      font-size: 3vw;
+      @media @tablet {
+        font-size: 3.5vw;
+      }
+      @media @mobile {
+      }
     }
   }
   nav {
