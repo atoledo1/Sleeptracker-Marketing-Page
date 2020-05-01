@@ -3,7 +3,12 @@ header {
   width: 100%;
   padding: 2%;
   height: 20%;
-
+  @media @tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media @mobile {
+  }
   .leftnav {
     display: flex;
     align-items: center;
@@ -29,19 +34,31 @@ header {
     height: 100%;
     display: flex;
     width: 55%;
-    font-size: 2.5rem;
     align-items: center;
     align-content: space-between;
     justify-content: space-evenly;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    align-content: space-between;
-    &:hover {
-      color: palegoldenrod;
-      text-transform: uppercase;
+    @media @tablet {
+      width: 70%;
+    }
+    @media @mobile {
+    }
+
+    a {
+      font-size: 2.5vw;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      align-content: space-between;
+      @media @tablet {
+        font-size: 3.5vw;
+      }
+      @media @mobile {
+      }
+
+      &:hover {
+        color: palegoldenrod;
+        text-transform: uppercase;
+      }
     }
   }
 }
