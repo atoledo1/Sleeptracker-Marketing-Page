@@ -307,6 +307,7 @@ path:hover {
 }
 @media ( max-width: 800px ) {
   .container .firstcontent {
+    align-content: space-between;
     flex-wrap: wrap-reverse;
   }
 }
@@ -324,6 +325,12 @@ path:hover {
     flex-wrap: nowrap;
     align-items: space-between;
     justify-content: space-between;
+    padding-top: 3rem;
+  }
+}
+@media ( max-width: 800px ) {
+  .container .firstcontent .text p {
+    padding-right: 3rem;
   }
 }
 .container .firstcontent .bubble {

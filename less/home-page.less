@@ -39,6 +39,7 @@ path:hover {
     line-height: 2.1rem;
     align-items: flex-start;
     @media @tablet {
+      align-content: space-between;
       flex-wrap: wrap-reverse;
     }
     @media @mobile {
@@ -55,8 +56,14 @@ path:hover {
         flex-wrap: nowrap;
         align-items: space-between;
         justify-content: space-between;
+        padding-top: 3rem;
       }
       @media @mobile {
+      }
+      p {
+        @media @tablet {
+          padding-right: 3rem;
+        }
       }
     }
     .bubble {
