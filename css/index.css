@@ -208,6 +208,10 @@ header a {
   text-align: center;
   align-content: space-between;
 }
+header a:hover {
+  color: palegoldenrod;
+  text-transform: uppercase;
+}
 footer {
   display: flex;
   align-items: center;
@@ -233,6 +237,10 @@ footer nav a {
   text-align: center;
   padding: 2% 0%;
 }
+footer nav a:hover {
+  color: palegoldenrod;
+  text-transform: uppercase;
+}
 svg {
   height: 100%;
   width: 25%;
@@ -248,6 +256,9 @@ path:hover {
   stroke: lightskyblue;
 }
 .container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
